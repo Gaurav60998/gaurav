@@ -1,0 +1,18 @@
+<div class="navbar">
+    <h2>XYZ Navbar</h2>
+  </div>
+  <div>
+    <div class="toggle-button-row" (click)="toggleSlideOut()">
+      <mat-icon>menu</mat-icon>
+    </div>
+  </div>
+  
+  <div class="slide-out-panel" [class.slide-out]="isSlideOut">
+    <div class="slide-out-content">
+      <h3 class="nav">SideNav</h3>
+      <p class="edit-col" (click)="onDash()">Dashboard</p>
+      <p class="edit-col" (click)="onemp()">Employee</p>
+      <p class="edit-col" (click)="onlogin()">login</p>
+      <p class="edit-col" (click)="onLogout()">Log Out</p>
+    </div>
+  </div>

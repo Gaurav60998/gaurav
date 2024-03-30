@@ -1,0 +1,114 @@
+<div
+    class="container-fluid mt-3"
+> 
+<div
+class="table-responsive text-center"
+> 
+<table
+    class="table table-primary"
+>
+    <thead>
+        <tr>
+            <th scope="col">Id</th>
+            <th scope="col">Name</th>
+            <th scope="col">Salary</th>
+            <th>Action</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr class="" *ngFor="let i of employee">
+            <td scope="row">{{i.id}}</td>
+            <td>{{i.name}}</td>
+            <td>{{i.salary}}</td>
+            <td><a
+                name=""
+                id=""
+                class="btn btn-primary me-4"
+                href="#"
+                role="button" (click)="editEmployee(i.id,i)"
+                >Update</a
+            >
+            <a
+                name=""
+                id=""
+                class="btn btn-danger"
+                href="#"
+                role="button" (click)="deleteEmployee(i.id)" 
+                >Delete</a
+            >
+            
+            </td>
+        </tr>
+    </tbody>
+</table>
+</div>
+</div>
+
+<div class="container" [formGroup]="empForm" (ngSubmit)="Add()">
+    <form>
+        <div class="mb-3 row">
+            <label
+                for="inputName"
+                class="col-4 col-form-label"
+                >Id</label
+            >
+            <div
+                class="col-8"
+            >
+                <input
+                    type="text"
+                    class="form-control"
+                    name="id"
+                    id="id"
+                    formControlName="id"
+                    placeholder="ID"
+                />
+            </div>
+        </div>
+        <div class="mb-3 row">
+            <label
+                for="inputName"
+                class="col-4 col-form-label"
+                >Name</label
+            >
+            <div
+                class="col-8"
+            >
+                <input
+                    type="text"
+                    class="form-control"
+                    name="name"
+                    id="name"
+                    formControlName="name"
+                    placeholder="Name"
+                />
+            </div>
+        </div>
+        <div class="mb-3 row">
+            <label
+                for="inputName"
+                class="col-4 col-form-label"
+                >Salary</label
+            >
+            <div
+                class="col-8"
+            >
+                <input
+                    type="text"
+                    class="form-control"
+                    name="salary"
+                    id="salary"
+                    formControlName="salary"
+                    placeholder="Salary"
+                />
+            </div>
+        </div>
+        <div class="mb-3 row">
+            <div class="offset-sm-4 col-sm-8">
+                <button type="submit" class="btn btn-primary">
+                    Add
+                </button>
+            </div>
+        </div>
+    </form>
+</div>

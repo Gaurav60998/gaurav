@@ -1,0 +1,48 @@
+mat-card {
+    max-width: 400px;
+    margin: 20px auto;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  mat-card-content {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  mat-form-field {
+    margin-bottom: 20px;
+    width: 100%;
+  }
+  
+  mat-card-actions {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  mat-icon {
+    font-size: 25px;
+    color: #1976d2;
+  }
+  
+  button {
+    width: 45%;
+  }
+  
+  mat-card-header {
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+  }
+  
+  /* Styling for the <p> tag */
+  p {
+    margin-top: 20px;
+    text-align: center;
+  }
+  
+  .highlighted {
+    color: #1976d2;
+    cursor: pointer;
+  }
+  
